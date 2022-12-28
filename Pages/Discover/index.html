@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Sound Cloud</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Cell -->
+        <div class="nav-cel">
+            <a href="index.html" class="brand">
+                <i class="fa-brands fa-soundcloud"></i>
+            </a>
+            <a href="#" class="nav-item active">
+                Home
+            </a>
+            <a href="#" class="nav-item">
+                Feed
+            </a>
+            <a href="#" class="nav-item">
+                Library
+            </a>
+        </div>
+
+        <!-- Togle Menu -->
+        <div class="nav-option">
+            <form class="input-search">
+                <input type="text" id="search" placeholder="Search" class="search">
+                <label for="search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></label>
+            </form>
+
+            <span class="premium">Try Next Pro</span>
+
+            <span class="upload">Upload</span>
+
+            <div class="nav-profile" id="nav-profile">
+                <img src="../../SRC/profile.jpg" alt="">
+                <span>erfan</span>
+                <i class="fa-solid fa-chevron-down" id="profile-btn"></i>
+
+                <div class="profile-content" id="profile-content">
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Likes</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-window-restore"></i>
+                        <span>Playlist</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-signal"></i>
+                        <span>Station</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Following</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Who to follow</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-star"></i>
+                        <span>Try Next Pro</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-sharp fa-solid fa-music"></i>
+                        <span>Tracks</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-divide"></i>
+                        <span>Distribute</span>
+                    </a>
+                </div>
+            </div>
+
+            <span><i class="fa-solid fa-bell"></i></span>
+
+            <span><i class="fa-solid fa-envelope"></i></span>
+
+            <span class="toggle-menu">
+                <i class="fa-solid fa-ellipsis" id="toggle-btn"></i>
+
+                <div class="menu-content" id="toggle-menu-content">
+                    <a href="about.html">
+                        About us
+                    </a>
+                    <a href="#">
+                        Legal
+                    </a>
+                    <a href="#">
+                        Copyright
+                    </a>
+                    <a href="#">
+                        Mobile apps
+                    </a>
+                    <a href="#">
+                        For creators
+                    </a>
+                    <a href="#">
+                        Blog
+                    </a>
+                    <a href="#">
+                        Jobs
+                    </a>
+                    <a href="#">
+                        Developers
+                    </a>
+                    <a href="#">
+                        support
+                    </a>
+                    <a href="#">
+                        Keyboard Shortcut
+                    </a>
+                    <a href="#">
+                        Subscription
+                    </a>
+                    <a href="#">
+                        Setting
+                    </a>
+                    <a href="#">
+                        Sing out
+                    </a>
+                </div>
+            </span>
+
+        </div>
+
+        <div class="nav-toggle">
+            <i class="fa-solid fa-bars" id="nav-toggle"></i>
+        </div>
+    </nav>
+
+    <!-- Container -->
+    <div class="container">
+        <div class="content">
+
+            <section class="like">
+                <p class="sec-title">More of what you like</p>
+
+                <div class="scroll">
+                    <div class="card">
+                        <div class="card-cover">
+                            <button class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <div class="play-btn">
+                                <button>
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-ellipsis" id="toggle-btn"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="name-tag">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p class="relate">Related tracks</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-cover">
+                            <button class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <div class="play-btn">
+                                <button>
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-ellipsis" id="toggle-btn"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="name-tag">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p class="relate">Related tracks</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-cover">
+                            <button class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <div class="play-btn">
+                                <button>
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-ellipsis" id="toggle-btn"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="name-tag">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p class="relate">Related tracks</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-cover">
+                            <button class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <div class="play-btn">
+                                <button>
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-ellipsis" id="toggle-btn"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="name-tag">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p class="relate">Related tracks</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-cover">
+                            <button class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <div class="play-btn">
+                                <button>
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-ellipsis" id="toggle-btn"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="name-tag">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p class="relate">Related tracks</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-cover">
+                            <button class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <div class="play-btn">
+                                <button>
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-ellipsis" id="toggle-btn"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="name-tag">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p class="relate">Related tracks</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recent">
+                <p class="sec-title">Recently Played</p>
+
+                <div class="scroll">
+                    <div class="card">
+                        <div class="card-cover">
+                            <button class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <div class="play-btn">
+                                <button>
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-ellipsis" id="toggle-btn"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="name-tag">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p class="relate">Related tracks</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-cover">
+                            <button class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <div class="play-btn">
+                                <button>
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-ellipsis" id="toggle-btn"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="name-tag">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p class="relate">Related tracks</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-cover">
+                            <button class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <div class="play-btn">
+                                <button>
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-ellipsis" id="toggle-btn"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="name-tag">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p class="relate">Related tracks</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-cover">
+                            <button class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <div class="play-btn">
+                                <button>
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-ellipsis" id="toggle-btn"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="name-tag">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p class="relate">Related tracks</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-cover">
+                            <button class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <div class="play-btn">
+                                <button>
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-ellipsis" id="toggle-btn"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="name-tag">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p class="relate">Related tracks</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-cover">
+                            <button class="play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <div class="play-btn">
+                                <button>
+                                    <i class="fa-solid fa-heart"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-ellipsis" id="toggle-btn"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="name-tag">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p class="relate">Related tracks</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <div class="panel">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
