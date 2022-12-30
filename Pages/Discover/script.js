@@ -6,7 +6,8 @@ const navProfile = document.getElementById("nav-profile"),
     toggleMenuContent = document.getElementById("toggle-menu-content"),
     navToggleBtn = document.getElementById("nav-toggle"),
     navOption = document.querySelector(".nav-option"),
-    scrollE = document.querySelectorAll(".scroll");
+    scrollE = document.querySelectorAll(".scroll"),
+    accountInfo = document.querySelectorAll(".account-info");
 
 
 // Profile navbar----------------------------------------------------
@@ -101,4 +102,17 @@ for (let i = 0; i < scrollE.length; i++) {
         let scrolling = (element - scrollX) * 2;
         scrollE[i].scrollLeft = scrollLeft - scrolling;
     })
+}
+
+
+// Inspir account img
+
+let marginRight = 10;
+
+for (let i = 0; i < accountInfo.length; i++) {
+    if (i == 0) {
+        marginRight = 0;
+    }
+    accountInfo[i].style.left = marginRight + "px";
+    marginRight = marginRight + 30;
 }
