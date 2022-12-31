@@ -132,7 +132,6 @@ for (let i = 0; i < infoImg.length; i++) {
     if (counter > images.length - 1) {
         counter = 0;
     }
-    console.log(counter);
 }
 
 for (let i = 0; i < cardCover.length; i++) {
@@ -141,5 +140,4 @@ for (let i = 0; i < cardCover.length; i++) {
     if (counter > images.length - 1) {
         counter = 0;
     }
-    console.log(counter);
 }
