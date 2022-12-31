@@ -7,7 +7,9 @@ const navProfile = document.getElementById("nav-profile"),
     navToggleBtn = document.getElementById("nav-toggle"),
     navOption = document.querySelector(".nav-option"),
     scrollE = document.querySelectorAll(".scroll"),
-    accountInfo = document.querySelectorAll(".account-info");
+    accountInfo = document.querySelectorAll(".account-info"),
+    cardCover = document.querySelectorAll(".card-cover"),
+    infoImg = document.querySelectorAll(".info-img");
 
 
 // Profile navbar----------------------------------------------------
@@ -77,7 +79,7 @@ for (let i = 0; i < scrollE.length; i++) {
     // Mouse Up
     scrollE[i].addEventListener("mouseup", () => {
         isDown = false;
-        
+
     })
 
     // Mouse leave
@@ -115,4 +117,29 @@ for (let i = 0; i < accountInfo.length; i++) {
     }
     accountInfo[i].style.left = marginRight + "px";
     marginRight = marginRight + 30;
+}
+
+// Set Iamges
+let images = ["img01.png", "img02.png", "img03.png", "img04.png", "img05.png", "img06.png", "img07.png", "img08.png", "img09.png", "img10.png", "img11.png", "img12.png", "img13.png", "img14.png"];
+
+
+let counter = 0;
+
+
+for (let i = 0; i < infoImg.length; i++) {
+    infoImg[i].style.background = `url("../../SRC/${images[counter]}") center/cover`
+    counter++;
+    if (counter > images.length - 1) {
+        counter = 0;
+    }
+    console.log(counter);
+}
+
+for (let i = 0; i < cardCover.length; i++) {
+    cardCover[i].style.background = `url("../../SRC/${images[counter]}") center/cover`
+    counter++;
+    if (counter > images.length - 1) {
+        counter = 0;
+    }
+    console.log(counter);
 }
