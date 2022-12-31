@@ -245,7 +245,7 @@ nav.navbar {
     width: calc(100% - 120px);
     margin: auto;
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 65% 35%;
     background: var(--light);
 }
 
@@ -361,19 +361,22 @@ nav.navbar {
 .sound-content {
     background: var(--grayGradiant);
     padding: 20px 20px 20px 20px;
-    display: grid;
-    grid-template-columns: 30% 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
     height: 220px;
 }
 
 .sound-content .card-cover {
-    width: 180px;
-    height: 180px;
+    width: 25%;
+    height: 100%;
 }
 
 .sound-content .sound-group {
     overflow: auto;
+    width: 75%;
+    height: 100%;
 }
 
 .sound-content .sound-group::-webkit-scrollbar {
@@ -450,7 +453,7 @@ nav.navbar {
     margin-top: 20px;
     display: flex;
     gap: 10px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
 }
 
@@ -562,7 +565,7 @@ nav.navbar {
     background: url("../../SRC/profile.jpg") center/cover no-repeat;
 }
 
-/* Penel */
+/* Penel -----------------------------------------------------*/
 .panel {
     height: 100px;
     background-color: blue;
@@ -592,6 +595,14 @@ nav.navbar {
 
     .container {
         width: calc(100% - 20px);
+    }
+
+    .sound-content .card-cover {
+        width: 35%;
+    }
+
+    .sound-content .sound-group {
+        width: 65%;
     }
 }
 
@@ -633,6 +644,12 @@ nav.navbar {
     }
 }
 
+@media (max-width: 800px) {
+    .container {
+        grid-template-columns: 100%;
+    }
+}
+
 @media (max-width: 650px) {
     .nav-option {
         height: auto;
@@ -645,6 +662,29 @@ nav.navbar {
         height: 30px;
     }
 
+}
+
+@media (max-width: 650px) {
+    .sound-content {
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .sound-content .card-cover,
+    .sound-content .sound-group {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .inspir {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .addPlaylist {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 407px) {
